@@ -15,7 +15,6 @@ class CPUManagerApp(ctk.CTk):
         
         # Set window class for Hyprland rules
         self.title("kimcore")
-        self.wm_instance_name("kimcore")
         
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
