@@ -9,6 +9,7 @@ class CPUManagerApp(ctk.CTk):
 
         self.title("KimCore - Master Kim")
         self.geometry("400x350")
+        self.attributes("-alpha", 0.9)  # Set transparency to 90%
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
 
