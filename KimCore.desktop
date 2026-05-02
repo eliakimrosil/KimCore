@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=KimCore
+Comment=Manage active CPU cores by Master Kim
+Exec=/home/eliakimrosil/cpu_power_manager/run.sh
+Icon=processor
+Terminal=false
+Categories=System;Settings;

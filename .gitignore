@@ -1,0 +1,6 @@
+# Build artifacts
+pkg/
+src/
+*.pkg.tar.zst
+KimCore.desktop
+!KimCore.desktop
