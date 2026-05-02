@@ -1,5 +1,5 @@
 # Maintainer: Master Kim <eliakimrosil@example.com>
-pkgname=kimcore-git
+pkgname=kimcore
 pkgver=1.0.0
 pkgrel=1
 pkgdesc="Modern CPU core power manager for Master Kim"
