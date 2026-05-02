@@ -4,11 +4,11 @@ pkgver=1.0.0
 pkgrel=1
 pkgdesc="Modern CPU core power manager for Master Kim"
 arch=('any')
-url="https://github.com/eliakimrosil/KimCore"
+url="https://github.com/eliakimrosil/kimcore"
 license=('MIT')
 depends=('python' 'python-customtkinter' 'tk')
 makedepends=('git')
-source=('main.py' 'run.sh' 'KimCore.desktop')
+source=('main.py' 'run.sh' 'kimcore.desktop')
 sha256sums=('SKIP' 'SKIP' 'SKIP')
 
 package() {
@@ -19,7 +19,7 @@ package() {
     install -Dm755 run.sh "$pkgdir/usr/bin/kimcore"
     
     # Install desktop entry
-    install -Dm644 KimCore.desktop "$pkgdir/usr/share/applications/kimcore.desktop"
+    install -Dm644 kimcore.desktop "$pkgdir/usr/share/applications/kimcore.desktop"
     
     # Fix the runner script to use system python and correct path
     sed -i 's|.*venv/bin/python.*|/usr/bin/python /usr/share/kimcore/main.py|' "$pkgdir/usr/bin/kimcore"

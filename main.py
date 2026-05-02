@@ -7,14 +7,14 @@ class CPUManagerApp(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("KimCore - Master Kim")
+        self.title("kimcore - Master Kim")
         self.geometry("400x350")
         
         # Set transparency (Alpha works better on XWayland/X11)
         self.attributes("-alpha", 0.7) 
         
         # Set window class for Hyprland rules
-        self.title("KimCore")
+        self.title("kimcore")
         self.wm_instance_name("kimcore")
         
         ctk.set_appearance_mode("dark")
@@ -25,7 +25,7 @@ class CPUManagerApp(ctk.CTk):
         self.total_cores = len(self.cores)
 
         # UI Components
-        self.label_title = ctk.CTkLabel(self, text="KimCore", font=ctk.CTkFont(size=24, weight="bold"))
+        self.label_title = ctk.CTkLabel(self, text="kimcore", font=ctk.CTkFont(size=24, weight="bold"))
         self.label_title.pack(pady=20)
 
         self.status_label = ctk.CTkLabel(self, text=self.get_status_text())
