@@ -14,7 +14,7 @@ class CPUManagerApp(ctk.CTk):
         self.attributes("-alpha", 0.7) 
         
         # Set window class for Hyprland rules
-        self.wm_name("KimCore")
+        self.title("KimCore")
         self.wm_instance_name("kimcore")
         
         ctk.set_appearance_mode("dark")
